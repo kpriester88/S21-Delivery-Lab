@@ -1,11 +1,14 @@
 name: Keyless Terraform Deploy
+
 on:
   push:
     branches:
       - main
+
 permissions:
   id-token: write 
   contents: read 
+
 jobs:
   terraform_deploy:
     runs-on: ubuntu-latest
